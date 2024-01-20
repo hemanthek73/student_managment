@@ -101,6 +101,14 @@
 </div>
 </form>
 <style>
+   body{
+      background-image: url('../main_data/clg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-color: black;
+  backdrop-filter: blur(4px);
+    }
 
 </style>
   <?php include('footer.php');?>

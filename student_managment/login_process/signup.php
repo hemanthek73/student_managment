@@ -68,11 +68,20 @@ if(isset($_POST['submit'])){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
   <style>
+     body{
+      background-image: url('../main_data/clg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-color: black;
+  backdrop-filter: blur(4px);
+    }
     .container{
       margin-top:50px;
       width:30%;
       margin:50px auto;
-      background: #f4f3ef;
+      
+      background-color: #f4f3ef;
       border-radius:10px;
       padding:10px;
       box-shadow:0px 2px 20px gray;
@@ -80,6 +89,30 @@ if(isset($_POST['submit'])){
     label{
       margin-bottom:10px;
     }
+    @media (max-width:1200px) {
+
+.container{
+  width:60vw;
+ 
+}
+    }
+    @media (max-width:1000px) {
+
+.container{
+  width:60vw;
+  
+}
+    }
+    @media (max-width:800px) {
+
+  .container{
+    width:90vw;
+    
+  }
+  label{
+    font: 1.2em sans-serif;
+  }
+}
   </style>
 
 </html>

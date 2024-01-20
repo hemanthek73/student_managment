@@ -21,10 +21,15 @@
   </body>
   <style>
     body{
-      background: #f4f3ef;
+      background-image: url('../main_data/clg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-color: black;
+  backdrop-filter: blur(10px);
     }
     .container{
-      height:90vh;
+      height:94vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -35,6 +40,7 @@
       font-size:70px;
       margin-bottom:20px;
       font-family: Georgia, 'Times New Roman', Times, serif;
+      color:white;
     }
  span{
      color:green;
