@@ -12,7 +12,7 @@
             </li>
           </ul>
           
-            <a type="submit" class="btn btn-danger mx-2"  href="logout.php" >logout</a>
+            <a type="submit" class="btn btn-danger mx-2"  href="../login_process/index.php" >logout</a>
           </form>
         </div>
       </div>

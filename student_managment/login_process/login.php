@@ -34,16 +34,30 @@ if($row){
   <?php 
     include("navbar.php") ;
     ?>
-    <div id="form"  class='container col-5' style='padding:10px;background-color:rgba(123,125,167,0.8); border-radius:10px;margin-top:35px;'>
-      <h2 style='text-align:center;'>LOGIN</h2>
+    <div id="form"  class='container col-5'>
+      <h1 style='text-align:center;' >LOGIN</h1>
       <form  name='form' class='form-group' action="login.php" method='post'>
         <label for='user'>Enter username/email</label>
         <input type='text' class='form-control' name='user' id='user' required><br><br>
         <label for='pass'>Enter password</label>
         <input type='password' name='pass'  class='form-control' id='pass' required><br><br>
-        <input type='submit' name='submit' id='btn' class='btn btn-success' value='login'></input>
+        <input type='submit' name='submit' id='btn' class='btn btn-success ' value='login'></input>
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
+  <style>
+    .container{
+      margin-top:50px;
+      width:30%;
+      margin:50px auto;
+      background: #f4f3ef;
+      border-radius:10px;
+      padding:10px;
+      box-shadow:0px 2px 20px gray;
+    }
+    label{
+      margin-bottom:10px;
+    }
+  </style>
 </html>
