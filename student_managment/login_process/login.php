@@ -35,7 +35,7 @@ if($row){
     include("navbar.php") ;
     ?>
     <div id="form"  class='container col-5'>
-      <h1 style='text-align:center;' >LOGIN</h1>
+      <h4 style='text-align:center;' >LOGIN</h4>
       <form  name='form' class='form-group' action="login.php" method='post'>
         <label for='user'>Enter username/email</label>
         <input type='text' class='form-control' name='user' id='user' required><br><br>
@@ -72,25 +72,29 @@ if($row){
 
 .container{
   width:60vw;
-  height: 400px;
+  height: auto;
 }
     }
     @media (max-width:1000px) {
 
 .container{
   width:60vw;
-  height: 400px;
+  
 }
     }
     @media (max-width:800px) {
 
   .container{
     width:90vw;
-    height: 400px;
-  }
-  label{
-    font: 1em sans-serif;
+    
   }
 }
+  label{
+    font-weight:bold;
+  }
+  h4{
+    color:green;
+  }
+
   </style>
 </html>

@@ -45,6 +45,24 @@
  span{
      color:green;
     }
+    @media (max-width:800px) {
+
+h1{
+  font-size:30px;
+}
+    }
+    @media (max-width:600px) {
+
+h1{
+  font-size:30px;
+}
+    }
+    @media (max-width:1000px) {
+
+h1{
+  font-size:40px;
+}
+    }
 
   </style>
 

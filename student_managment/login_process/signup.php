@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
     include("navbar.php") ;
     ?>
     <div id="form" class='container col-4' >
-      <h2 style='text-align:center;'>SIGNUP FORM</h2>
+      <h4 style='text-align:center;'>SIGNUP FORM</h4>
       <form  name='form' action="signup.php" method='post'>
         <label for='user'>Enter username</label>
         <input type='text' name='user' id='user' class='form-control' required><br><br>
@@ -75,12 +75,18 @@ if(isset($_POST['submit'])){
   background-clip: border-box;
   background-color: black;
   backdrop-filter: blur(4px);
-    }
+  
+    min-height: 100vh;
+
+  }
+  h4{
+    color:green;
+  }
+    
     .container{
       margin-top:50px;
       width:30%;
       margin:50px auto;
-      
       background-color: #f4f3ef;
       border-radius:10px;
       padding:10px;
@@ -88,6 +94,7 @@ if(isset($_POST['submit'])){
     }
     label{
       margin-bottom:10px;
+      font-weight:bold;
     }
     @media (max-width:1200px) {
 

@@ -36,7 +36,8 @@ else{
 }
  ?>
 <div class="form-group" >
-<form action='update_page.php?id_new=<?php echo $id; ?>' method='post'  >
+  <h4 style='text-align:center;padding-top:2%;'>UPDATE STUDENT INFORMATION</h4>
+<form action='update_page.php?id_new=<?php echo $id; ?>' method='post' id='form' >
   <div class="form-group">
       <label for="f_name">First name</label>
       <input type="text" class="form-control" name="f_name" placeholder='enter first name' value=<?php echo $row['first_name']?> />
@@ -52,14 +53,37 @@ else{
     <input type="submit" class="btn btn-success" name='update_students' value='UPDATE' style="margin-top:30px;">
 </form>
 <style>
+   body{
+      background-image: url('../main_data/clg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-color: black;
+  backdrop-filter: blur(10px);
+    }
+    #form{
+      background: #f4f3ef;
+      margin:10px;
+      padding:20px;
+      overflow:hidden;
+     
+   
+    }
   .form-group{
     width:60vW;
-    margin:2% auto;
+    /* margin:2% auto; */
+    margin:0 auto;
+    background: #f4f3ef;
+    border-radius:10px;
+    
    
   }
   input{
     height:50px;
     
+  }
+  label{
+    font-weight:bold;
   }
   @media (max-width:800px) {
     .form-group{
